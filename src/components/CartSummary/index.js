@@ -12,9 +12,9 @@ const CartSummery = () => (
 
       return (
         <div className="cart-summery-card">
-          <p className="total-price">
+          <h5 className="total-price">
             Order Total: <span className="price">Rs {totalAmount}</span>
-          </p>
+          </h5>
           <p className="item-count">{cartList.length} items in cart</p>
           <button className="checkout-btn" type="button">
             Checkout

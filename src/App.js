@@ -75,6 +75,10 @@ class App extends Component {
     }
   }
 
+  removeAllItems = () => {
+    this.setState({cartList: []})
+  }
+
   render() {
     const {cartList} = this.state
 
@@ -84,6 +88,7 @@ class App extends Component {
           cartList,
           addCartItem: this.addCartItem,
           removeCartItem: this.removeCartItem,
+          removeAllCartItems: this.removeAllItems,
           incrementCartItemQuantity: this.incrementCartItemQuantity,
           decrementCartItemQuantity: this.decrementCartItemQuantity,
         }}
